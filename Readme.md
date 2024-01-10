@@ -1,2 +1,2 @@
-Notes and Assignments of ![Udemy Course]('https://www.udemy.com/course/react-the-complete-guide-incl-redux/')
+Notes and Assignments of ![Course]('https://www.udemy.com/course/react-the-complete-guide-incl-redux/') <br>
 This repository provides access to code files, code snapshots, slides & other resources that are used or provided by the React - The Complete Guide course.
