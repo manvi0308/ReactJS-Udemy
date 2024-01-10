@@ -3,7 +3,7 @@ import Player from './components/Player.js';
 function App() {
   return (
     <>
-      <Player />
+      <Player userName={'Manvi'}/>
       <div id="challenges"></div>
     </>
   );
