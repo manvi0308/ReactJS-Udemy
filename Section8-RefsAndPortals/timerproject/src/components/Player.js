@@ -1,10 +1,13 @@
 import { useState, useRef } from "react";
 export default function Player() {
+
+  //ToDo Clear the input field once I click set Name button
   const playerName = useRef(); // Its a JS Object
   const [userName, setuserName] = useState();
 
   function handleSubmit() {
-    setuserName(playerName.current.value);
+    setuserName(playerName.current.value); //^ Imperative Mode
+    playerName.current.value='';   //^ Manipulating DOM - Declarative Mode
   }
   return (
     <section id="player">
