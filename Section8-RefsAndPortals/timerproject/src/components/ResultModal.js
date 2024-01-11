@@ -1,4 +1,6 @@
-import React, { forwardRef, useImperativeHandle, useRef } from "react";
+import React, { forwardRef, useImperativeHandle, useRef } from "react"; //^ will only expose methods and functions that can be used in any environment
+import { createPortal } from "react-dom"; //^ includes a couple of features and functions for DOM
+//& createPortal lets you render some children into a different part of the DOM.
 
 const ResultModal = forwardRef(function ResultModal(
   { targetTime, remainingTime, onReset },
@@ -16,10 +18,10 @@ const ResultModal = forwardRef(function ResultModal(
       },
     };
   });
-/*<dialog> can be closed using esc key, however currently onReset function will not be triggered, to do so
+  /*<dialog> can be closed using esc key, however currently onReset function will not be triggered, to do so
 add onClose prop to dialog element and bind it to onReset prop value */
-  return (
-        <dialog ref={dialog} className="result-modal" onClose={onReset}>
+  return createPortal(
+    <dialog ref={dialog} className="result-modal" onClose={onReset}>
       {userLost && <h2>You Lost </h2>}
       {!userLost && <h2>Your Score {score}</h2>}
       <p>
@@ -33,7 +35,8 @@ add onClose prop to dialog element and bind it to onReset prop value */
         {/* For closing the dialog */}
         <button>Close</button>
       </form>
-    </dialog>
+    </dialog>,
+    document.getElementById("modal")
   );
 });
 

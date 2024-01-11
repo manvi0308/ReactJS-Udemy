@@ -10,9 +10,7 @@ export default function Player() {
   }
   return (
     <section id="player">
-      <h2>
-        Welcome {userName ? userName : " Unknown entity"}
-      </h2>
+      <h2>Welcome {userName ? userName : " Unknown entity"}</h2>
       <p>
         {/*  ref={playerName} --> Connection of ref with this input field */}
         <input ref={playerName} type="text" />
