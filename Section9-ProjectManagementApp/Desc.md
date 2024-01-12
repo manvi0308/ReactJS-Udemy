@@ -1,3 +1,12 @@
+#**Project Management App Using React JS**
+
+## Features
+- Build a Project Management web app
+- Build, Style and Re-use components
+- Manage State
+- Access DOM Elements and Browser APIs using ref
+- Manage JSX Rendering Positions with Portals
+  
 <b> Home Page
 ![image](https://github.com/manvi0308/ReactJS-Udemy/assets/60390722/84f91cf6-6e1e-43c0-b5d2-d8f8f3b88340)
 <br>
