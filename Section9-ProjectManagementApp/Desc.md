@@ -1,4 +1,4 @@
-#**Project Management App Using React JS**
+**Project Management App Using React JS**
 
 ## Features
 - Build a Project Management web app

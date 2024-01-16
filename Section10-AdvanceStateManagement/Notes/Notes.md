@@ -1,0 +1,4 @@
+- Most React Apps consist of multiple components
+- Passing of shared data through multiple layers of components -> **Prop Drilling**
+- Component Composition - Sol 1
+- 
