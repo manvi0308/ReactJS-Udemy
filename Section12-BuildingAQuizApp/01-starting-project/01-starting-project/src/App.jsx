@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 export default function () {
   return (
     <>
-    <Header/>
+      <Header />
       <Quiz />
     </>
   );
