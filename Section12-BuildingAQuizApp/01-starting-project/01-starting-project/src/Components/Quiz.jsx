@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 import QUESTIONS from "../questions";
 import quizCompletedImage from "../assets/quiz-complete.png";
 import QuestionTimer from "./QuestionTimer";
+import { sortPlacesByDistance } from './loc.js';
+
 export default function Quiz() {
   const [useranswers, setUserAnswers] = useState([]);
   const [answerState, setanswerState] = useState("");
